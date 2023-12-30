@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	fmt.Println("dollar-bot...")
+	fmt.Println("dolarya...")
 
 	utils.LoadEnvironment()
 

@@ -16,7 +16,7 @@ func LoadEnvironment() {
 	}
 
 	// Construir la ruta completa al archivo .env
-	envFilePath := filepath.Join(currentDir+"/dollar-bot", ".env")
+	envFilePath := filepath.Join(currentDir+"/dolarya", ".env")
 
 	if err := godotenv.Load(envFilePath); err != nil {
 		log.Fatal("Error to load file .env")
