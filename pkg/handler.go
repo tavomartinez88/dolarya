@@ -3,6 +3,7 @@ package pkg
 import (
 	"dollar-bot/internal"
 	"dollar-bot/internal/utils"
+	"fmt"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 	"log"
 	"os"
@@ -86,6 +87,7 @@ func (h *Handler) HandleMessage() {
 }
 
 func ConfigBot() (*tgbotapi.BotAPI, tgbotapi.UpdateConfig) {
+	fmt.Println("token: " + os.Getenv("TELEGRAM_TOKEN"))
 	bot, err := tgbotapi.NewBotAPI(os.Getenv("TELEGRAM_TOKEN"))
 	description := tgbotapi.SetChatTitleConfig{
 		ChatID: 1,
