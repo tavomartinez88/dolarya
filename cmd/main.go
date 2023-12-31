@@ -1,7 +1,6 @@
 package main
 
 import (
-	"dollar-bot/internal/utils"
 	"dollar-bot/pkg"
 	"fmt"
 )
@@ -9,7 +8,7 @@ import (
 func main() {
 	fmt.Println("dolarya...")
 
-	utils.LoadEnvironment()
+	//utils.LoadEnvironment()
 
 	h := pkg.NewHandler()
 	h.HandleMessage()
