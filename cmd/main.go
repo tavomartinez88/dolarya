@@ -8,6 +8,7 @@ import (
 func main() {
 	fmt.Println("dolarya...")
 
+	//uncomment to work locally
 	//utils.LoadEnvironment()
 
 	h := pkg.NewHandler()

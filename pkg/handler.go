@@ -87,7 +87,6 @@ func (h *Handler) HandleMessage() {
 }
 
 func ConfigBot() (*tgbotapi.BotAPI, tgbotapi.UpdateConfig) {
-	fmt.Println("token: " + os.Getenv("TELEGRAM_TOKEN"))
 	bot, err := tgbotapi.NewBotAPI(os.Getenv("TELEGRAM_TOKEN"))
 	description := tgbotapi.SetChatTitleConfig{
 		ChatID: 1,
@@ -100,7 +99,7 @@ func ConfigBot() (*tgbotapi.BotAPI, tgbotapi.UpdateConfig) {
 	debug, _ := strconv.ParseBool(os.Getenv("MODE_DEBUG"))
 	bot.Debug = debug
 
-	log.Printf("Autorizado como %s", bot.Self.UserName)
+	fmt.Printf("Autorizado como %s", bot.Self.UserName)
 
 	u := tgbotapi.NewUpdate(0)
 	u.Timeout = 60
