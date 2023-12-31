@@ -1,6 +1,6 @@
 module dollar-bot
 
-go 1.12
+go 1.16
 
 require github.com/go-resty/resty/v2 v2.11.0
 
