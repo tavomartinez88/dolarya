@@ -1,17 +1,20 @@
 package main
 
 import (
+	"dollar-bot/internal/utils"
 	"dollar-bot/pkg"
 	"fmt"
 	"log"
 	"net/http"
+	"os"
 )
 
 func main() {
 	fmt.Println("dolarya...")
 
-	//uncomment to work locally
-	//utils.LoadEnvironment()
+	if os.Getenv("ENVIRONMENT") == "dev" {
+		utils.LoadEnvironment()
+	}
 
 	go func() {
 		http.HandleFunc("/", healthCheckHandler) // Asigna el manejador a la ruta "/health"
