@@ -4,8 +4,7 @@
 ![Telegram Bot API](https://img.shields.io/badge/Telegram%20Bot%20API-Latest-blue?style=flat-square&logo=telegram)
 ![DolarApi](https://img.shields.io/badge/DolarApi-Latest-blue?style=flat-square)
 
-![fd776f87-f758-4afd-a468-700c50a1a656.jpeg](..%2F..%2F..%2FDownloads%2Ffd776f87-f758-4afd-a468-700c50a1a656.jpeg)
-
+![logo.jpeg](logo.jpeg)
 
 
 ## Descripción
