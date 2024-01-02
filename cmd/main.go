@@ -1,7 +1,6 @@
 package main
 
 import (
-	"dollar-bot/internal/utils"
 	"dollar-bot/pkg"
 	"fmt"
 	"net/http"
@@ -11,7 +10,7 @@ func main() {
 	fmt.Println("dolarya...")
 
 	//uncomment to work locally
-	utils.LoadEnvironment()
+	//utils.LoadEnvironment()
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "OK")
