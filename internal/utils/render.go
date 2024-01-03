@@ -20,7 +20,7 @@ func RenderCotization(resp []types.MoneyDetail, flag string, msg *tgbotapi.Messa
 			`%s *%s*:
 						 - *Compra:* $%.2f
 						 - *Venta:* $%.2f
-						 - *Fecha Actualización:* %s`,
+						 - *Fecha Actualización:* %s\n`,
 			flag, item.Name, item.Buy, item.Sell, dateTime,
 		)
 	}
