@@ -17,8 +17,8 @@ func main() {
 	}
 
 	go func() {
-		http.HandleFunc("/", healthCheckHandler) // Asigna el manejador a la ruta "/health"
-		err := http.ListenAndServe(":8000", nil) // Escucha en el puerto 8000
+		http.HandleFunc("/", healthCheckHandler)
+		err := http.ListenAndServe(":8000", nil)
 		if err != nil {
 			log.Fatal(err)
 		}
