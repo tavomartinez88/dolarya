@@ -20,7 +20,8 @@ func RenderCotization(resp []types.MoneyDetail, flag string, msg *tgbotapi.Messa
 			`%s *%s*:
 						 - *Compra:* $%.2f
 						 - *Venta:* $%.2f
-						 - *Fecha Actualización:* %s\n\t`,
+						 - *Fecha Actualización:* %s
+`,
 			flag, item.Name, item.Buy, item.Sell, dateTime,
 		)
 		msgText += fmt.Sprintf("\n")
